@@ -1,0 +1,32 @@
+# Sorting Algorithm Performance Analyzer
+
+## Program Overview
+
+This program is designed to implement, compare, and analyze various sorting algorithms. It measures the performance of different sorting methods in terms of execution time, helping users understand how various algorithms perform under different conditions.
+
+## Key Features
+
+- **Multiple Sorting Algorithms**: The program can incorporate various sorting algorithms (e.g., Merge Sort, Quick Sort, Bubble Sort, etc.)
+- **Performance Measurement**: Each algorithm is timed to evaluate its efficiency
+- **Extensible Design**: New sorting algorithms can be added with minimal changes to the existing structure
+
+## How It Works
+
+1. The program generates or accepts input data
+2. It applies different sorting algorithms to the data
+3. It measures and reports the execution time for each algorithm
+4. Results can be compared to determine which algorithm is most efficient for different data sets
+
+## Adding New Algorithms
+
+To add a new sorting algorithm:
+1. Implement the sorting function in the main program
+2. Add the function to the list of algorithms to test
+3. The info page and structure will remain largely unchanged
+
+## Data Types
+
+The program currently handles numerical data (integers) for sorting comparisons. Future extensions could include:
+- Floating-point numbers
+- Strings/alphabetical sorting
+- Custom objects with defined comparison operators
