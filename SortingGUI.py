@@ -115,9 +115,9 @@ def write_results_to_sheet(sheet, size, sort_algorithms, times, memory_stats):
     for algo, time, mem_stat in zip(sort_algorithms, times, memory_stats):
         rows.append([
             timestamp,
-            size,
+            size/100,
             algo.__name__,
-            round(time, 7),
+            round(time*1000, 7),  # Convert to milliseconds
             mem_stat['peak_memory_bytes'],
             round(mem_stat['peak_memory_mb'], 4)
         ])
